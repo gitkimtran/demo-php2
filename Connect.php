@@ -11,7 +11,7 @@
 		$pass = $_POST['pass']);
 	}
 
-	$sql = "select * from tblaccount where _user = '".$username."' and _pass = '".$pass."'";
+	$sql = "SELECT * FROM tblaccount WHERE _user = '".$username."' and _pass = '".$pass."'";
 
 	$result = pg_query($sql, $dbconn);
 	$row = pg_num_rows($result);
