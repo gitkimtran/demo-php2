@@ -11,16 +11,16 @@
 		$pass = $_POST['pass']);
 	}
 
-	$sql = "SELECT * FROM tblaccount WHERE _user = '".$username."' and _pass = '".$pass."'";
+	$sql = "SELECT * FROM tblaccount where _user = '".$username."' and _pass = '".$pass."'";
 
-	$result = pg_query($sql, $dbconn);
+	$result = pg_query($dbconn, $sql);
 	$row = pg_num_rows($result);
 	if ($row==1) {
 		# code...
-		return "Login success";
+		echo "Login success";
 	}
 	else {
 		# code...
-		return "Login failed";
+		echo "Login failed";
 	}
  ?>
