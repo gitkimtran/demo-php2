@@ -6,8 +6,8 @@
 </head>
 <body>
 	<form action="Connect.php" method="POST">
-		<input type="text" name="username" label="User" required="true"><br>
-		<input type="password" name="pass" label="Pass" required="true"><br>
+		User:<br><input type="text" name="username" required="true"><br>
+		Password:<br><input type="password" name="pass" required="true"><br>
 		<input type="submit" name="" id="" value="Login">
 	</form>
 </body>
